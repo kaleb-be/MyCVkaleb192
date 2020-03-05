@@ -8,8 +8,8 @@
 <body>
     <hr>
     <table cellspacing = "20px">
-        <td><a href="index.html">Home</a></td><td>|</td><td><a href="contact.html">Contacts</a>
-        </td>
+        <td><a href="contact.html">Contacts</a>
+        </td><td>|</td><td><a href="gallery.html">Gallery</a></td>
     </table>
     <hr>
     <table cellspacing ="10">
@@ -19,7 +19,7 @@
 
             </td>
             <td><h1>Kaleb Besufikad</h1>
-                <h3>Student, Addis Ababa Institute of Technology</h3>  <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div> <hr>
+                <h3>Student, Addis Ababa Institute of Technology</h3>  
                 <p>Hi there,</p>
                 <p>I am Kaleb, a student at AAiT. I am studying Software engineering under the faculty of <em>Information Technology and Scientific Computing</em>. I am a beginner to intermediate <strong>Java</strong> and <strong>Python</strong> developercurrently a sophomore at the Institute.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione vitae dolores voluptatibus a dolorem perspiciatis id repellendus aliquam placeat? Libero mollitia eligendi beatae ipsa obcaecati optio incidunt dolorem reiciendis.</p>
@@ -85,15 +85,21 @@
 
     </table>
     <hr>
-    <form action="mailto:se.kaleb.besufikad@gmail.com" method = "POST" enctype="utf-8">
+    <table>
+        <td><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa%20Institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div> <hr></td>
+        <td><form action="mailto:se.kaleb.besufikad@gmail.com" method = "POST" enctype="utf-8">
         <label for="name">First Name: </label><br>
-        <input type="text" name="fName" id="fName" required><br><br>
+        <input type="text" name="fName" id="fName" pattern="[a-z]{1-15}" ><br><br>
 
         <label for="name">Last name</label><br>
-        <input type="text" name="lName" id="lName" required><br><br>
+        <input type="text" name="lName" id="lName" pattern="[a-z]{1-15}" ><br><br>
+        
+        <label for="name">Password:</label><br>
+        <input type="password" name="pw" id="pw" pattern = "[a-z]{4-8}"><br><br>
         
         <label for="email">Email:</label><br>
-        <input type="email" name="eMail" id="eMail"required><br><br>
+        <input type="email" name="eMail" id="eMail"><br><br>
+        
         <select name="select" id="select">which continent are you from?
             <option value="Afr">Africa</option>
             <option value="Asi">Asia</option>
@@ -106,8 +112,8 @@
         
         <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
         <input type="submit" value="Submit">
-    </form>
-
+    </form></td></tr>
+</table>
     <img src="images\stn.png" alt="page bottom">
 </body>
 </html>
