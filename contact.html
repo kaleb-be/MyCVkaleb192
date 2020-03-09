@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaleb's CV</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 </head>
-<body>
+<body bgcolor="#FFF1E5">
+
     <hr>
-    <table cellspacing = "20px">
-        <td><a href="index.html">Home</a></td><td>|</td><td><a href="gallery.html">Gallery</a></td>
-    </table>
+    <table cellspacing = "20px" >
+
+        <td><a href="index.html">HOME</a></td><td>|</td><td><a href="#">CONTACT</a>
+        </td><td>|</td><td><a href="gallery.html">GALLERY</a>
+        </td>    </table>
     <hr>
     <h3>
         contact us:
@@ -18,7 +23,79 @@
         <tr><td><a href="https//:www.facebook.com">Facebook</a></td></tr>
         <tr><td><a href="http//:www.telegram.org">telegram</a></td></tr>
     </table>
-    <img src="images\stn.png" alt="page bottom">
+    
+    <hr>
+    <table>
+        <td ><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=addis%20ababa%20institute%20of%20technology&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://ytify.com">ytify.com</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></td>  
+        <td><fieldset>
+            <legend >Fill out this form</legend>
+            <form action="mailto:se.kaleb.besufikad@gmail.com" method = "POST" enctype="utf-8">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Your First name</label>
+                        </td>
+                        <td>|<input type="text" name = "fname" id = "fname" pattern = "[a-z]"required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="name">Your Last name </label>
+                        </td>
+                        <td>
+                            |<input type="text" name = "lname" id = "lname" maxlength = "15" minlength = "1" pattern = "[a-z]{1-15}">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="name">Your Password</label>
+                        </td>
+                        <td>
+                            |<input type="password" name = "pwd" id = "pwd" minlength = "8" pattern = "[a-z]{1-15}"required>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for=""email>Your Email</label>
+                        </td>
+                        <td>
+                            |<input type="text" name = "fname" id = "fname" pattern = "[a-z]{1-15}">
+                        </td>
+                    </tr>
+                    <tr><td>Your country </td>
+                        <td >|<select name="select" id="select">
+                                <option value="Afr">Africa</option>
+                                <option value="Asi">Asia</option>
+                                <option value="Ant">Antarctica</option>
+                                <option value="Eur">Europe</option>
+                                <option value="SA">South America</option>
+                                <option value="NA">North America</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            <fieldset><legend title=>Comment here</legend>
+                            <textarea name="comment" id="comment" cols="30" rows="20"></textarea>
+                        </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan = "2">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        </td>
+    </table>
+    <hr>
+    <p align="center" >Developed By Kaleb B. &copy;2020</p> 
+    <hr>
 </body>
 </html>
 <!-- the ! sign generates BOILER PLATE -->
