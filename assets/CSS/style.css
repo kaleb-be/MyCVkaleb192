@@ -1,0 +1,364 @@
+/* ================== TicTacToe =================== */
+#tictactoe{
+    width: 912px;
+    height: 912px;
+    justify-self: center;
+    align-self: center;
+}
+/* cells */
+#tictactoe>div:nth-child(1){
+    width: 300px;
+    height:300px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(2){
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(3){
+    width: 300px;
+    height: 300px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(4){
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-top: 2px solid;    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(5){
+    width: 300px;
+    height: 300px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(6){
+    width: 300px;
+    height: 300px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-left: 2px solid;    border-color: black;
+    float: left;
+}
+#tictactoe>div:nth-child(7){
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-color: black;
+    float:left;
+}
+#tictactoe>div:nth-child(8){
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;    border-color: black;
+    float:left;
+}
+#tictactoe>div:nth-child(9){
+    width: 300px;
+    height: 300px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-color: black;
+    padding: 0px;
+    float: left;
+}
+
+
+
+/* ==================== Flags ======================= */
+
+.body{
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.flag {
+    background-color: #5971b4;
+    height: 180px;
+	width: 270px;
+    float: left;
+    margin: 2px;
+}
+
+
+.spain{
+    height: 90px;
+    background: yellow;
+    border-top: 45px solid red;
+    border-bottom: 45px solid red;
+}
+
+
+.belgium{
+    width: 90px;
+    background: yellow;
+    border-left: 90px solid #333;
+    border-right: 90px solid red;
+}
+
+
+.india{
+    width: 268px;
+    height: 60px;
+    background: white;
+    border-top: 60px solid rgb(221, 163, 76);
+    border-bottom: 60px solid green;
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+}
+
+
+.italy{
+    width: 90px;
+    height:178px;
+    background: white;
+    border-left: 90px solid green;
+    border-right: 90px solid red;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+
+
+.tgambia>div:nth-child(1){
+    height: 5px;
+    background: white;
+    border-top: 57px solid red;
+    border-bottom: 57px solid #5971b4;
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+}
+.tgambia>div:nth-child(2){
+    height: 4px;
+    background: white;
+    border-bottom: 57px solid rgb(26, 184, 26);
+    border-right: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+}
+
+
+.greece{
+    border: 1px solid gainsboro;
+}
+.greece>div:nth-child(1)>div{
+	float: left;
+}
+.greece>div:nth-child(1)>{
+	height: 100px;
+	margin: 0;
+	width: 100px;
+}
+.greece>div:nth-child(1)>div:nth-child(1){
+    height: 40px;
+    width: 40px;
+    background-color: #3bb7e7;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    float:left;
+}
+.greece>div:nth-child(1)>div:nth-child(2){
+    height: 41px;
+    width: 40px;
+    background-color: #3bb7e7;
+    border-left: 10px solid white;
+    border-bottom: 9px solid white;
+    float:left;
+}
+.greece>div:nth-child(1)>div:nth-child(3){
+    height: 40px;
+    width: 40px;
+    background-color: #3bb7e7;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    clear:left;
+}
+.greece>div:nth-child(1)>div:nth-child(4){
+    height: 40px;
+    width: 40px;
+    background-color: #3bb7e7;
+    border-left: 10px solid white;
+    border-top: 10px solid white;
+    float:left;
+}
+.greece>div:nth-child(2){
+	height :20px;
+	width: 171px;
+    margin-left: 99.5px;
+    background-color: white;
+	border-bottom: 20px solid #3bb7e7;
+	border-top: 20px solid #3bb7e7;
+}
+.greece>div:nth-child(3){
+	height :20px;
+    width: 171px;
+    margin-left: 99.5px;
+	background-color: white;
+	border-bottom: 20px solid #3bb7e7;
+}
+.greece>div:nth-child(4){
+	height :20px;
+    width: 270.5px;
+	background-color: white;
+	border-bottom: 20px solid #3bb7e7;
+}
+.greece>div:nth-child(5){
+	height :20px;
+    width: 270.5px;
+	background-color: white;
+	border-bottom: 20px solid #3bb7e7;
+}
+
+
+.pnewguinea{
+    width: 0px;
+    height: 0px;
+    border-top: 180px rgb(175, 22, 22) solid;
+    border-left:270px black solid;
+}
+
+
+.denmark>div:nth-child(1){
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    float:left;
+}
+.denmark>div:nth-child(2){
+    height: 80px;
+    width: 170px;
+    background-color: red;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    float:left;
+}
+.denmark>div:nth-child(3){
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    float:left;
+}
+.denmark>div:nth-child(4){
+    height: 80px;
+    width: 170px;
+    background-color: red;
+    border-left: 10px solid white;
+    border-top: 10px solid white;
+    float:left;
+}
+
+
+.iceland>div:nth-child(1){
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float:left;
+}
+.iceland>div:nth-child(2){
+    height: 75px;
+    width: 165px;
+    background-color: red;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float:left;
+}
+.iceland>div:nth-child(3){
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    margin-right: 10px;
+    margin-top: 10px;
+    float:left;
+}
+.iceland>div:nth-child(4){
+    height: 75px;
+    width: 165px;
+    background-color: red;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;
+}
+
+.kuwait{
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    border-left: 90px solid black;
+    border-top: 60px solid rgb(53, 148, 53);
+    border-bottom: 60px solid rgb(170, 15, 15);
+}
+
+
+.czechia{
+    width: 160px;
+    height: 0px;
+    border-left: 110px solid #5971b4;
+    border-top: 90px solid white;
+    border-bottom: 90px solid red;
+}
+
+
+.bhutan{
+    width: 0px;
+    height: 0px;
+    border-top: 180px #e7b04a solid;
+    border-right:270px #b35b33 solid;
+}
+
+
+.eritrea{
+    width: 0px;
+    height: 0px;
+    border-left: 270px solid red;
+    border-top: 90px solid green;
+    border-bottom: 90px solid skyblue
+}
+.timorleste>div:nth-child(1)>div{
+    float:left;
+    width: 180px;
+    height: 0px;
+    border-left: 90px solid black;
+    border-top: 90px solid rgba(0, 0, 0, 0);
+    border-bottom: 90px solid rgba(0, 0, 0, 0)
+}
+.timorleste>div:nth-child(2){
+    width: 135px;
+    height: 0px;
+    border-left: 135px solid yellow;
+    border-top: 90px solid #99040b;
+    border-bottom: 90px solid #99040b;
+}
