@@ -1,9 +1,13 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+
+}
 /* ================== TicTacToe =================== */
 #tictactoe{
     width: 912px;
     height: 912px;
-    justify-self: center;
-    align-self: center;
 }
 /* cells */
 #tictactoe>div:nth-child(1){
