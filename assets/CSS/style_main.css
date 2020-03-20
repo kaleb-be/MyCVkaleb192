@@ -73,6 +73,13 @@ nav>ul>li:hover{
 nav>ul>li>a:visited{color: black;}
 nav>ul>li>a:active{color: slategray;}
 
+div>a>img{
+    
+    max-height: 2.7em;
+    max-width: 100%;
+    clear: both;
+    display: block;
+}
 #content{
     margin-top: 80px;
 }
@@ -92,6 +99,7 @@ nav>ul>li>a:active{color: slategray;}
 #work{
     width: 30%;
     height: 4em;
+    color: #fff;
     font-size:1000%;
     font-weight: bolder;
     text-decoration: none;
@@ -101,6 +109,11 @@ nav>ul>li>a:active{color: slategray;}
     background-color: #fff;
     border-radius: 30px ;
 }
+#work>div{
+    box-shadow:150rem 0rem black inset;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 #questions{
     width: 100%;
 }
@@ -108,11 +121,4 @@ nav>ul>li>a:active{color: slategray;}
     width: 33%;
     height: 4.2em;
     margin: 0%;
-}
-div>a>img{
-    
-    max-height: 2.7em;
-    max-width: 100%;
-    clear: both;
-    display: block;
 }
