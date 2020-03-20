@@ -12,6 +12,12 @@
         body{
             color: rgb(25, 90, 92);
         }
+        code{
+            background-color: azure;
+            padding: 2px;
+            border: 1px solid slategray;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -33,10 +39,10 @@
             <p class="title">does it matter to use relative sizes for styling?</p>
             <article>
                 <p>before answering the question i would like you to think of building a hospital. Now forget all the details and focus on one question: <em>"Would you like your hospital to have ramps and elevators?"</em></p>
-                <p>the answer to both questions would be <em>yes</em>. Ofcourse the second one is somewhat obvious- who would build a hospital that is inaccessible to the patients? Right! The thing is the first question has a very similar logic as to why webpages should be styled using relative sizes.</p>
+                <p>the answer to both questions would be <em>yes</em>. Of course the second one is somewhat obvious- who would build a hospital that is inaccessible to the patients? Right! The thing is the first question has a very similar logic as to why webpages should be styled using relative sizes.</p>
                 <p>setting the sizes for visual components such as spacing, font size, and the like is simply not considering the end-users. When a person creates a websites, the targets of the website should be all of the population and among that population are people who are in their 60s with visual impairments who may not be able to see the fixed pixel size that the site used.</p>
                 <p>while the default <em>medium</em> font size is not usually changed by the end-users- and even less frequently by 60 year-olds. However it is possible to do so in all browsers.
-                    When the users change that font, if the styling of the website uses fixed sizes like pixels to specify sizes, then there would be no effect meaning the user is not going to enjoy browsing the site due to its uncomfortable sizing. On the other hand if the site uses relative sizes like <strong>em, rem, and %</strong> which depend on the default size of the browser to style the site, it means that whenever the default font of the browser changes along with it changes the content on the website.
+                    When the users change that font, if the styling of the website uses fixed sizes pixels to specify sizes, then there would be no effect meaning the user is not going to enjoy browsing the site due to its uncomfortable sizing. On the other hand if the site uses relative sizes like <strong>em, rem, and %</strong> which depend on the default size of the browser to style the site, it means that whenever the default font of the browser changes along with it changes the content on the website.
                 </p>
                 <p>to formally address the topic of the article, yes it matters a lot to use relative sizes for styling</p>
             </article>
@@ -45,15 +51,21 @@
 
 
         <section>
-            <p class = "title">My second Post</p>
+            <p class = "title">how does a browser interpret <em>pixels (px)</em></p>
             <article>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                
+                <p>to look at how a browser understands pixel units, like 200px and 16px, we first need to understand about what pixels are and how they work.
+                    People usually misunderstand pixels to be little squares on the screen. well unfortunately, pixels are not little squares. Rather pixels are point samples- each pixel exists at a point and consists of three samples, one for each primary color contributing to the picture at the sampling point. It is the rectilinear array of point samples/pixels that forms human understandable objects on the screen.
+                </p>
+                <p>now that you know about pixels even if only just a little, it should be obvious how browsers interpret the measurements from HTML and CSS. Just incase though, I'll explain it. </p>
+                <p>well first of all, all browsers have a default styling size which is set to "medium" at 16 pixels and can be tweaked to the users' liking.
+                    Now this font is applied to the <code>&lt;html&gt;</code> tags which is then inherited by all the other child tags. 
+                    when a person writes code that looks like this:
+                    <p><code title="HTML code snippet">&lt;div id = "special" width = "200px"&gt;Pixels are not squares!&lt;/div&gt;</code></p>
+                    or this
+                    <p><code title="CSS code snippet">#special{width : 200px;}</code></p>
+                    both of which adjust the width of an object, the default style size applied to the html is overridden by the new one-200px 
+                </p>
+                <p>so what previously took up 16 pixels on the display would now take 200 pixels as its display across the screen.</p>
             </article>
             <p class="date">March 21, 2020(14:21)</p>
         </section>
