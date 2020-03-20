@@ -1,6 +1,6 @@
 
 body{
-    background-color: darkgrey;
+    background-color: rgb(235, 235, 235);
     font-family:'roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
     margin: 10px;
 }
@@ -22,9 +22,8 @@ header{
 
 section{
     background-color: #fff;
-    border-right: 1px solid rgba(230, 230, 230, 0.74);
-    border-bottom: 1px solid rgba(230, 230, 230, 0.74);
-    border-radius: 20px;
+    border: 1px solid rgba(219, 219, 219, 0.74);
+    border-radius: 10px;
     margin: 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 30px;
@@ -35,6 +34,8 @@ article{
     font-size: 15px;
     text-align: justify;
     line-height: 25px;
+    padding: 5px 30px;
+    margin: 10px 0px;
 }
 .clear{
     clear: both;
@@ -64,14 +65,12 @@ nav>ul>li>a{
 
 
 nav>ul>li:hover{
-    background-color: darkgray;
-    color: #fff;
-    border-radius: 5px;
+    border-bottom: 5px solid black; 
+    padding-bottom: 5px;
 }
 
 
 nav>ul>li>a:visited{color: black;}
-nav>ul>li>a:hover{color: #fff;}
 nav>ul>li>a:active{color: slategray;}
 
 #content{
@@ -111,6 +110,7 @@ nav>ul>li>a:active{color: slategray;}
     margin: 0%;
 }
 div>a>img{
+    
     max-height: 2.7em;
     max-width: 100%;
     clear: both;

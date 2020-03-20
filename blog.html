@@ -15,10 +15,25 @@
         code{
             color: dodgerblue;
             font-size: 0.9rem;
+            font-weight: lighter;
             background-color: rgb(238, 238, 238);
             padding: 2px;
             border: 1px solid lightgray;
             border-radius: 5px;
+            
+        }
+        .h1{
+            font-size: large;
+            font-weight: bolder;
+            text-indent: 0.5rem;
+        }
+        .h2{
+            font-weight: bold;
+            text-indent: 3rem;
+        }
+        .h3{
+            font-weight: bold;
+            text-indent: 0.3rem;
         }
     </style>
 </head>
@@ -49,7 +64,7 @@
                 </p>
                 <p>to formally address the topic of the article, yes it matters a lot to use relative sizes for styling</p>
             </article>
-            <p class="date">March 20, 2020(4:25 pm)</p>
+            <p class="date">March 19, 2020(4:25 pm)</p>
         </section>
 
 
@@ -71,23 +86,122 @@
                 </p>
                 <p>so what previously took up 16 pixels on the display would now take 200 pixels as its display across the screen.</p>
             </article>
-            <p class="date">March 21, 2020(14:21)</p>
+            <p class="date">March 20, 2020(6:21 pm)</p>
         </section>
         
         
         <section>
-            <p class = "title">My third Post</p>
-            <hr3
-            <article>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
+            <p class = "title">what's new in CSS3</p>
+            <hr>
+            <article >
+                <p>CSS3 is the latest evolution of the Cascading Style Sheets markup-language and aims at extending CSS2.1. Here are the implemented features that are new in CSS. this article does not include features that are not yet implemented in CSS as of today.</p>
+                <p class="h1"><strong>1. CSS3 selectors</strong></p>
+                <p>originally, CSS allowed the matching of elements by type, class and/or ID.
+                     CSS2.1 added pseudo-elements, pseudo-classes, and combinators.
+                     Now, with CSS3, it's possible to target even more elements on the page with a wide range of selectors
+                </p>
+                <p class="h2">A. Attribute selectors</p>
+                <p>CSS2 introduced several attribute selectors. These allow for matching elements based on their attributes. CSS3 expands upon those attribute selectors.Three more attribute selectors were added in CSS3; they allow for substring selection.</p>
+                <p class="h3">
+                    1. Matches any element <code>E</code> whose attribute <code>attr</code> starts with a value <code>val</code>. In other words the val matches the beginning of the attribute value.
+                </p>
+                <code >E[attr^=val]{...}</code>
+
+
+                <p class="h3">
+                    2. Matches any element <code>E</code> whose attribute <code>attr</code> ends with a value <code>val</code>. In other words the val matches the end of the attribute value.
+                </p>
+                <code >E[attr$=val]{...}</code>
+            
+
+                <p class="h3">
+                    3. Matches any element <code>E</code> whose attribute <code>attr</code> matches with a value <code>val</code> anywhere within the attribute. It is similar to <code>E[attr~=val]</code>, except the <code>val</code> can be part of a word.
+                </p>
+                <code>E[attr^=val]{...}</code>
                 
-            </article>
-            <p class="date">March 22, 2020(14:21)</p>
+                <p class="h2">B. pseudo-classes</p>
+                <p>
+                    It’s likely that you’re already familiar with some of the user interaction pseudo-classes,namely <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code>, and <code>:focus</code>.
+A few more pseudo-class selectors were added in CSS3. One is the :root selector, which allows designers to point to the root element of a document. In HTML, it would be <code>&lt;html&gt;</code>.
+                </p>
+                <code>:root{overflow:auto;}</code>
+                <p>As a complement to the <code>:first-child</code> selector, the <code>:last-child</code> was added. With it one can select the last element named of a parent element. For a site with articles contained in <code>&lt;div class=’article’&gt; &lt;/div&gt;</code> tags, where each has a last paragraph with some information that needs to be uniformly stylized, this rule would change the font for last paragraph of each article.</p>
+                <code>
+                    div.article > p:last-child{font-style: italic;}
+                </code>
+                <p>A new user interaction pseudo-class selector was added, the :target selector. To draw the user’s attention to a span of text when the user clicks on a same-page link, a rule like the first line below would work nicely; the link would look like the second line, the highlighted span like the third.</p>
+                <code>span.notice:target{font-size: 2em; font-style: bold;}
+                <br>&lt;a href='#section2'&gt;Section 2&lt;/a&gt;
+                <br>&lt;p id='section2'&gt;...&lt;/p&gt;</code>
+                <p>A functional notation for selecting specified elements that fail a test has been created. The negation pseudo-class selector, <code>:not</code> can be coupled with almost any other selector that has been implemented. For example to put a border around images that don’t have a border specified, use a rule like this.</p>
+                <code>img:not([border]){border: 1;}
+                </code>
+
+
+
+
+                <p class="h1"><strong>2. CSS3 Colors</strong></p>
+
+                <p>
+                    CSS3 brings with it support for some new ways of describing colours . Prior to CSS3, we almost always declared colours using the hexadecimal format (#FFF, or #FFFFFF for white). It was also possible to declare colours using the rgb() notation, providing either integers (0–255) or percentages.</p>
+                <p>
+                    The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: <abbr title="hue, saturation, lightness">HSL</abbr>, <abbr title="hue, saturation, lightness, Alpha">HSLA</abbr>, and <abbr title="Red, Green, Blue, Alpha">RGBA</abbr>. The most notable change with these new color types is the ability to declare semitransparent colors.
+                </p>
+                <p class="h2">1. <abbr title="Red, Green, Blue, Alpha">RGBA</abbr></p>
+                <p><abbr title="Red, Green, Blue, Alpha">RGBA</abbr> works just like RGB, except that it adds a fourth value: alpha, the opacity level or alpha transparency level. The first three values still represent red, green, and blue. For the alpha value, 1 means fully opaque, 0 is fully transparent, and 0.5 is 50% opaque. You can use any number between 0 and 1 inclusively.</p>
+                <p class="h2">2. <abbr title="hue, saturation, lightness">HSL</abbr> and <abbr title="hue, saturation, lightness, Alpha">HSLA</abbr> </p>
+                <p>hue, saturation, lightness stands for hue, saturation, and lightness. Unlike RGB, where you need to manipulate the saturation or brightness of a color by changing all three color values in concert, with hue, saturation, lightness you can tweak either just the saturation or the lightness while keeping the same base hue. The syntax for hue, saturation, lightness comprises an integer value for hue, and percentage values for saturation and lightness.</p>
+                <p>The hsl( ) declaration accepts three values:</p>
+                <p>The hue in degrees from 0 to 359. Some examples are: 0 = red, 60 = yellow, 120= green, 180 = cyan, 240 = blue, and 300 = magenta.</p>
+                <p>The saturation as a percentage with 100% being the norm. Saturation of 100% will be the full hue, and saturation of 0 will give you a shade of gray essentially causing the hue value to be ignored.</p>
+                <p>A percentage for lightness with 50% being the norm. A lightness of 100% will be white, 50% will be the actual hue, and 0% will be black.</p>
+                <p>The a in hsla( ) here also functions the same way as in rgba( )</p>
+                <p class="h2">3.Opacity</p>
+                <p>In addition to specifying transparency with HSLA and RGBA colors (and soon, eight-digit hexadecimal values), CSS3 provides us with the opacity property. opacity sets the opaqueness of the element on which it’s declared, similar to alpha.</p>
+                <p>Let’s look at an example:</p>
+                <code>div.halfopaque {<br>
+                    background-color: rgb(0, 0, 0);<br>
+                    opacity: 0.5;<br>
+                    color: #000000;<br>
+                    }<br>
+                    div.halfalpha {<br>
+                    background-color: rgba(0, 0, 0, 0.5);<br>
+                    color: #000000;<br>
+                    }</code>
+                    <p>Though the usage of both alpha and opacity notations seem similar, when you look at it, there is a key difference in their function.
+                    </p><p>   While opacity sets the opacity value for an element and all of its children, a semitransparent RGBA or HSLA color has no impact on the element’s other CSS properties or descendants.</p>
+                    <p class="h1"><strong>Rounded corners: border-radius</strong></p>
+                    <p>The border-radius property lets you create rounded corners without the need for images or additional markup. To add rounded corners to our box, we simply add</p>
+                    <code>border-radius: 25px;</code>
+                    <p>The border-radius property is actually a shorthand. For our “a” element, the corners are all the same size and symmetrical. If we had wanted different-sized corners, we could declare up to four unique values</p>
+                    <code>border-radius: 5px 10px 15px 20px;</code>
+                    <p class="h1">4. Drop shadows</p>
+                    <p>CSS3 provides the ability to add drop shadows to elements using the box-shadow property. This property lets you specify the color, height, width, blur, and offset of one or multiple inner and/or outer drop shadows on your elements.</p>
+                    <code>box-shadow: 2px 5px 0 0 rgba(72,72,72,1);</code>
+                    <p class="h1">5. Text shadow</p>
+                    <p>the text-shadow property adds shadows to individual characters in text nodes. Prior to CSS 3, this would be done by either using an image or duplicating a text element and then positioning it.</p>
+                    <code>text-shadow: topOffset leftOffset blurRadius color;</code>
+                    <p class="h1">6. Linear Gradients</p>
+                    <p>W3C added the syntax for generating linear gradients with CSS3.</p>
+                    <code>Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);<br>
+                    </code>e.g.<code>#grad {background: linear-gradient(to right, red , yellow);}</code>
+                    <p>its iven possible to specify direction in degrees</p>
+                    <p class="h1">7. Radial Gradients</p>
+                    <p>Radial gradients are circular or elliptical gradients. Rather than proceeding along a straight axis, colors blend out from a starting point in all directions.</p>
+                    <code>
+                        Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
+</code><br>e.g.<code>//Default- elliptical<br>#grad {background: radial-gradient(red, yellow, green);}
+<br>//Circle<br>#grad {background: radial-gradient(circle, red, yellow, green);}</code>
+                    <p class="h1">8.Multiple background images</p>
+                    <p>In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.</p>
+                    <code>
+                        background-image:<br>
+                        url(firstImage.jpg),<br>
+                        url(secondImage.gif),<br>
+                        url(thirdImage.png);
+                    </code>
+                </article>
+            <p class="date">March 20, 2020(1:05 am)</p>
         </section>
     </div>
 
