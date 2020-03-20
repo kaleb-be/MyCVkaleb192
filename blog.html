@@ -10,12 +10,14 @@
     <title>Kaleb Besufikad</title>
     <style>
         body{
-            color: rgb(25, 90, 92);
+            color: rgb(61, 66, 73);
         }
         code{
-            background-color: azure;
+            color: dodgerblue;
+            font-size: 0.9rem;
+            background-color: rgb(238, 238, 238);
             padding: 2px;
-            border: 1px solid slategray;
+            border: 1px solid lightgray;
             border-radius: 5px;
         }
     </style>
@@ -37,6 +39,7 @@
     <div id="content">
         <section>
             <p class="title">does it matter to use relative sizes for styling?</p>
+            <hr>
             <article>
                 <p>before answering the question i would like you to think of building a hospital. Now forget all the details and focus on one question: <em>"Would you like your hospital to have ramps and elevators?"</em></p>
                 <p>the answer to both questions would be <em>yes</em>. Of course the second one is somewhat obvious- who would build a hospital that is inaccessible to the patients? Right! The thing is the first question has a very similar logic as to why webpages should be styled using relative sizes.</p>
@@ -52,13 +55,14 @@
 
         <section>
             <p class = "title">how does a browser interpret <em>pixels (px)</em></p>
+            <hr>
             <article>
                 <p>to look at how a browser understands pixel units, like 200px and 16px, we first need to understand about what pixels are and how they work.
                     People usually misunderstand pixels to be little squares on the screen. well unfortunately, pixels are not little squares. Rather pixels are point samples- each pixel exists at a point and consists of three samples, one for each primary color contributing to the picture at the sampling point. It is the rectilinear array of point samples/pixels that forms human understandable objects on the screen.
                 </p>
                 <p>now that you know about pixels even if only just a little, it should be obvious how browsers interpret the measurements from HTML and CSS. Just incase though, I'll explain it. </p>
                 <p>well first of all, all browsers have a default styling size which is set to "medium" at 16 pixels and can be tweaked to the users' liking.
-                    Now this font is applied to the <code>&lt;html&gt;</code> tags which is then inherited by all the other child tags. 
+                    Now this size is applied to everything in between the <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> tags which is then inherited by all the other child tags. 
                     when a person writes code that looks like this:
                     <p><code title="HTML code snippet">&lt;div id = "special" width = "200px"&gt;Pixels are not squares!&lt;/div&gt;</code></p>
                     or this
@@ -73,6 +77,7 @@
         
         <section>
             <p class = "title">My third Post</p>
+            <hr3
             <article>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus temporibus et provident sed sint deserunt quam in vero reprehenderit? Vero sequi iusto dolorem inventore deserunt minima, doloremque quibusdam quis cum.</p>
